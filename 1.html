@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="UTF-8">
+       <link rel="Stylesheet" href="style.css">
+       <script src= 'popcorn.js'></script>
+       <script src = 'howtojs.js'></script>
+        <title>Section 1: Getting Started</title>
+    </head>
+    <body>
+    <div class="wholepg">
+
+      <div class="top">
+        <h1 class="pgtitle">Section 1: Getting Started</h1>
+      </div>
+
+      <div class="bottom">
+
+          <div class="rightBar">
+            <h2 class="secondaryTitle">Dowloading and Including the Popcorn.js library</h2>
+            <p>First things first, you'll need to download the Popcorn.js library. If you click
+            <a href="http://popcornjs.org/download" target="_blank">here</a> you'll be taken to
+            the page to download the library. There are multiple options, but don't be overwhelmed. All
+            you will need to get started is the full stand-alone Popcorn.js library</p>
+            <p>If you have any confusion take a look at this image. This is the file you want: <br>
+            <img src="images/download.jpg" class="downloadImg"></p>
+
+            <p>Now that you've located the file the next part is simple. Download the file and save it
+            as popcorn.js. Create an html file and include the script. You now should have html code
+            that looks something like this:<br>
+            <img src="images/include.jpg">
+            </p><br>
+
+            <h2 class="secondaryTitle">Adding a video</h2>
+            <p>Once you have the popcorn.js library set up, it's time to add some media. In this example,
+            we'll demonstrate how to add a video element. </p>
+            <p>Here is the code you will use:
+            <img src="images/addVid.jpg"></p>
+             <p>You start with the <code>&lt;video&gt;</code> tag. This creates and instance of a video
+             element.</p>
+             <p>The <code>&lt;video&gt;</code> element has many optional attributes. The only ones we are going to worry about
+             are: controls, height, width, and src</p>
+             <ul>
+                <li>The controls attribute indicates whether or not the video controls (play, pause, etc.) 
+                are displayed. If it is included, video controls will be displayed</li>
+                <li>Height and width attributes are pretty self-explanatory. They specify let the
+                user specify the height and width of the video player</li>
+                <li>src is the source url of the video. Alternatively, a <code>&lt;source&gt;</code>
+                element can be used. The <code>&lt;video&gt;</code> element can contain several video
+                sources.</li>
+             </ul>
+             <p>If you are interested in adding other attributes to your video, you can find a complete
+             list <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">
+             here</a>.</p>
+
+             <p>Furthermore, there are three different formats of video file supported by the 
+             <code>&lt;video&gt;</code> element: MP4, WebM, and Ogg. Different browsers support different
+             types of files. Information on browser support can be found 
+             <a href="http://www.w3schools.com/tags/tag_video.asp" target="_blank">here</a>. If the 
+             <code>&lt;video&gt;</code> element is not supported by a browser, the text between
+             <code>&lt;video&gt; and &lt;/video&gt;</code> is displayed. Often, to ensure that the video
+              will play across the majority of browsers, sources for the video in all three supported 
+              formats are included.</p>
+
+             <p class="note"><em>**Note:</em> The <code>&lt;video&gt;</code> element is new to HTML5 </p><br>
+
+            <p>If you are wondering what this code produces <a href="gettingStarted.html" target="_blank">
+            here</a> is the output</p>
+
+            <p>Additionally, instead of adding a video element an audio element can also be used. The process
+            of adding an audio element is fairly similar.</p><br>
+
+            <p>Congratulations! You have just taken the first step in learning how to use Popcorn.</p>
+
+          <nav>
+              <div class="prev"><a href="howtohtml.html"><- Introduction </a></div>
+              <div class="next"><a href="2.html">Section 2: Creating a Popcorn Instance -> </a></div>
+          </nav>
+
+          </div>
+
+          
+          <div class="leftBar">
+            <h3>Sections</h3>
+            <ul class="section-list">
+              <li><a href="howtohtml.html">Introduction</a></li>
+              <li><a href="1.html">Section 1: Getting Started</a></li>
+              <li><a href="2.html">Section 2: Creating a Popcorn Instance</a></li>
+            </ul>
+          </div>     
+      </div>
+    </div>
+ 
+    </body>
+</html>
