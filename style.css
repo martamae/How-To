@@ -61,7 +61,7 @@ a:hover
     border-color:Black;
     float:right;
     padding:10px;
-    margin-right:20px;
+    margin-right:10px;
     margin-bottom:20px;
     background-color:white;
     border-radius: 10px;
@@ -73,7 +73,7 @@ a:hover
     border-color:Black;
     float:left;
     padding:10px;
-    margin-left:20px;
+    margin-left:10px;
     margin-bottom:20px;
     background-color:white;
     border-radius: 10px;
@@ -90,8 +90,8 @@ img
 }  
 code 
 {
-    font-family:Arial;
-    font-size:90%;
+    font-family:Century;
+    font-size:110%;
 }  
 .note
 {

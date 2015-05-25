@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<html>
+ <head>
+        <meta charset="UTF-8">
+       <link rel="Stylesheet" href="style.css">
+       <script src= 'popcorn.js'></script>
+       <script src = 'howtojs.js'></script>
+        <title>Section 3: Synching Text with Media</title>
+    </head>
+    <body>
+    <div class="wholepg">
+
+      <div class="top">
+        <h1 class="pgtitle">Section 3: Synching Text with Media</h1>
+      </div>
+
+      <div class="bottom">
+
+          <div class="rightBar">
+            <h2 class="secondaryTitle">document.addEventListener()</h2>
+            <p>The document.addEventListener() method is used to add an event
+            handler to the document. We will use this method to create an event 
+            handler in our JavaScript file to execute the code inside the method when the 
+            document has finished loading</p>
+
+            <p>The document.addEventListener() method takes the form:<br>
+            <code>&nbsp &nbsp document.addEventListener
+            (event, fuction, useCapture)</code></p>
+            <p>Parameters:</p>
+            <ul >
+                <li><b>event</b> - string that specifies the name of the event<br>
+                For this example, we will use the DOMContentLoaded event to
+                execute the code within the method when the content has finished
+                loading.<br>
+                You can find a full list of events
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Events" 
+                target="_blank">here</a>.</li>
+                <li><b>function</b> - This is a required parameter. It runs when the event
+                 occurs<br>
+                 For this example, this function will contain the code that synchronizes
+                 the text to the media<br>
+                 We will discuss this more next</li>
+                 <li><b>useCapture</b> - Boolean value, indicates whether the event should
+                 be executed in the capturing(true) or bubbling (default, false) phase<br>
+                 This parameter will be false for this example</li>
+            </ul>
+            <p>If you are interested in knowing more about this method go 
+            <a href="http://www.w3schools.com/jsref/met_document_addeventlistener.asp"
+            target="_blank">here</a>.</p><br>
+
+            <p>At this point, your JavaScript file should look like this:<br>
+            <img src="images/addEventListener.jpg" /></p>
+
+            <p>We are now ready to move on to writing the function to add text to
+            the page.</p><br>
+            
+            <h2 class="secondaryTitle">Footnote Plugin</h2>
+
+            <p>Footnote is a plugin for popcorn that adds a text element to the page.
+            This plugin will be used to add text to the page and synchronize
+            this added text with the media element</p>
+
+             <p>The footnote plugin takes the form:<br>
+            <code>&nbsp &nbsp [nameOfPopcornInstance].footnote({list of options})</code></p>
+
+            <p>Options</p>
+            <ul>
+                <li>Start: number, time you want the text to appear</li>
+                <li>End: number, time you want the text to disappear</li>
+                <li>Text: string, text you want to appeat in the target</li>
+                <li>Target: string, id of the element that the text is going to be 
+                attached to</li>
+            </ul><br>
+
+            <p>Example: For our example, we want the string "Boo!" to appear in the footnote
+            div at 3 seconds and disappear at 5 seconds. Inorder to do that, we write the 
+            footnote function like so:<br>
+            <img src="images/footnote.jpg">
+            </p>
+
+            <p class="note"><em>**Note:</em> If you downloaded the wrong version of
+             the popcorn.js file you'll find out now. If you are having trouble getting 
+             this function to work, you may have download the version without the plugins</p>
+
+            <p>Now, all you have to do is add this function to the
+            document.addEventListener() method in the correct place you are done!</p><br>
+
+            <p>The final product should look like this:</p>
+            <img src="images/syncText.jpg">
+
+            <p>You can check out a demo of this code 
+            <a href="updateVid.html" target="_blank">here</a></p><br>
+
+          <nav>
+              <div class="prev"><a href="2.html"><- Section 2: Creating a Popcorn Instance</a></div>
+              <div class="next"><a href="4.html">Section 4: Synching Images with Media -></a></div>
+          </nav>
+
+          </div>
+
+          <div class="leftBar">
+            <h3>Sections</h3>
+            <ul class="section-list">
+              <li><a href="howtohtml.html">Introduction</a></li>
+              <li><a href="1.html">Section 1: Getting Started</a></li>
+              <li><a href="2.html">Section 2: Creating a Popcorn Instance</a></li>
+              <li></li><a href="3.html">Section 3: Synching Text with Media</a></li>
+              <li><a href="4.html">Section 4: Synching Images with Media</a></li>
+            </ul>
+          </div>     
+      </div>
+    </div>
+ 
+    </body>
+</html>

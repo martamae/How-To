@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="UTF-8">
+       <link rel="Stylesheet" href="style.css">
+       <script src= 'popcorn.js'></script>
+       <script src = 'howtojs.js'></script>
+        <title>Section 2: Creating a Popcorn Instance</title>
+    </head>
+    <body>
+    <div class="wholepg">
+
+      <div class="top">
+        <h1 class="pgtitle">Section 2: Creating a Popcorn Instance</h1>
+      </div>
+
+      <div class="bottom">
+
+          <div class="rightBar">
+            <h2 class="secondaryTitle">Updating the video element</h2>
+            <p>Before creating the actual instance, two things need to be added to the code you wrote 
+            to add the video element:
+            <ol>
+                <li>Add an id to the <code>&lt;video&gt;</code> element so you can tell 
+                Popcorn which element to control.</li>
+                 <li>Add a <code>&lt;div&gt;</code> element after the 
+                 <code>&lt;video&gt;</code> element with the id footnote. This will later be used
+                 to add the text that is synched with the video</li>
+            </ol>
+            </p>
+
+            <p>You code should now look something like this: <img src="images/updateVid.jpg"></p><br>
+            
+            <h2 class="secondaryTitle">Creating the Instance</h2>
+            <p>The Popcorn constructor takes the form:<br>
+            <code>&nbsp &nbsp Popcorn(callback | id, optionsObject)</code></p>
+
+            <p>Options
+            <ul>
+                <li>id - id of the media element the Popcorn instance will control</li>
+                <li>callback - function that executes when DOM is ready</li>
+                <li>optionsObject - To specify additional options</li>
+            </ul></p><br>
+            
+            <p>Example: To create an instance of Popcorn to control our previously created
+            video element we need to use the id we added to the video element as an argument
+            when calling the Popcorn constructor</p>
+
+            <p>The code for this is simple and looks like this:<br>
+            <img src="images/instance.jpg" /></p>
+
+            <p class="note"><em>**Note:</em> We are assigning the Popcorn instance
+            to a variable for work we are going to do with it later</p>
+
+            <p>Put this declaration in a Java Script file linked to your html file
+            and you have created an instance of Popcorn. You ready to move on 
+            to learning how to use the popcorn instance to create interactive media</p>
+            <br>
+
+          <nav>
+              <div class="prev"><a href="1.html"><- Section 1: Getting Started </a></div>
+              <div class="next"><a href="3.html">Section 3: Synching Text with Media -> </a></div>
+          </nav>
+
+          </div>
+
+          
+          <div class="leftBar">
+            <h3>Sections</h3>
+            <ul class="section-list">
+              <li><a href="howtohtml.html">Introduction</a></li>
+              <li><a href="1.html">Section 1: Getting Started</a></li>
+              <li><a href="2.html">Section 2: Creating a Popcorn Instance</a></li>
+              <li></li><a href="3.html">Section 3: Synching Text with Media</a></li>
+              <li><a href="4.html">Section 4: Synching Images with Media</a></li>
+            </ul>
+          </div>     
+      </div>
+    </div>
+ 
+    </body>
+</html>
